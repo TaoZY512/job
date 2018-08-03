@@ -1,0 +1,38 @@
+
+ .goods-news{
+   width:100%;
+   display: flex;
+   justify-content: flex-start;
+   flex-wrap:wrap;
+   margin-bottom:16px;
+ }
+
+ .single{
+   width:50%;
+   height:335px;
+   margin-bottom:30px;
+   padding:10px;
+   box-sizing: border-box;
+   overflow: hidden;
+ }
+.single .goods-img{
+   width:100%;
+   height:240px;
+}
+.single .goods-title{
+    width:100%;
+    height:30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align:left;
+    font-size:14px;
+    letter-spacing: 2px;
+    color:#aaa;
+}
+.single .price{
+    text-align:left;
+    font-size:14px;
+    letter-spacing: 2px;
+    color:rgb(128, 5, 5);
+}
