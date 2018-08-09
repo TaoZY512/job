@@ -1,0 +1,106 @@
+
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    text-align: center;
+}
+header,main{
+    width:80%;
+    margin:20px auto;
+}
+.menu{
+    margin:60px auto;
+
+}
+.menu-list{
+    list-style: none;
+    font-size: 0;
+
+
+}
+
+.menu-list_u {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.menu .menu-list .menu-list_u{
+    z-index: 2;
+}
+.menu-list li{
+    vertical-align: top;
+    list-style: none;
+    width:120px;
+    height:40px;
+    background:#414440;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 16px;
+    margin-right: 1px;
+    z-index: 999;
+    position: relative;
+}
+.menu-list li a{
+    text-decoration: none;
+    color:white;
+
+}
+.menu-list li:hover{
+    background: rgba(0,0,0,.6);
+
+}
+.menu-list .menu-list_u{
+    display: none;
+}
+.menu-list li:hover .menu-list_u{
+    display: block;
+
+
+}
+.content{
+    width:1536px;
+    height:660px;
+    background: url("../images/kawasaki-04.jpg");
+    background-size: cover;
+    position: relative;
+}
+.content .content_r{
+    position: absolute;
+    float:right;
+    top:50%;
+    right:10px;
+
+}
+.content .content_l{
+    position: absolute;
+    float:left;
+    top:50%;
+    left:10px
+}
+.content ul{
+    position: absolute;
+    bottom:10px;
+   left:50%;
+    transform: translateX(-50%);
+}
+.content .circle{
+
+    width:16px;
+    height:16px;
+    background: pink;
+    margin:5px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.content .circle:first-child{
+    background: white;
+}
+.content .circle:hover{
+    background: white;
+}

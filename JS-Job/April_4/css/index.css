@@ -1,0 +1,89 @@
+  @charset "UTF-8";
+  @font-face {
+      font-family: 'iconfont';  /* project id 616473 */
+      src: url('//at.alicdn.com/t/font_616473_b05w9h1flvfpf1or.eot');
+      src: url('//at.alicdn.com/t/font_616473_b05w9h1flvfpf1or.eot?#iefix') format('embedded-opentype'),
+      url('//at.alicdn.com/t/font_616473_b05w9h1flvfpf1or.woff') format('woff'),
+      url('//at.alicdn.com/t/font_616473_b05w9h1flvfpf1or.ttf') format('truetype'),
+      url('//at.alicdn.com/t/font_616473_b05w9h1flvfpf1or.svg#iconfont') format('svg');
+  }
+header,main{
+    width:70%;
+    margin:20px auto;
+    }
+  footer{
+      width:70%;
+      margin:10px auto;
+      text-align: center;
+  }
+h1{
+    text-align: center;
+    margin: 20px auto;
+    text-shadow: -1px 0 4px #23131a;
+    letter-spacing: 6px;
+
+}
+.m_content p{
+    font-size: 14px;
+    text-indent: 2em;
+    font-family: 宋体;
+}
+.m_content p:first-letter{
+    color:red;
+    font-size: 40px;
+    letter-spacing:2px;
+    font-weight: bold;
+    font-family: 仿宋;
+}
+main p:nth-child(2){
+    border:1px solid #000;
+    width:800px;
+    height:400px;
+    margin:0 auto;
+    padding:10px;
+    box-sizing: border-box;
+    /*竖排显示文字*/
+    /*right to left(从右向左), 从左向右是 writing-mode: vertical-lr;*/
+    writing-mode: vertical-rl;
+    font-family:'maozedongziti113512a92e1c639';
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-size: 24px;
+}
+.f_t{
+    font-size: 10px;
+
+}
+.f_t span{
+    margin:0 10px;
+}
+.f_t span:before{
+    content: url(&#xe679;);
+}
+  /*配置*/
+  .iconfont{
+      font:normal normal 10px "iconfont";
+      margin:5px;
+  }
+  .f_t a{
+      text-decoration: none;
+      color:blue;
+  }
+  .f_t a:hover{
+      text-decoration: underline;
+  }
+.f_b span{
+    font-size: 14px;
+    color: red;
+    cursor:pointer;
+    position: relative;
+}
+.f_b span:hover:after{
+    color:white;
+    background: red;
+    content:attr(data-msg);
+    top: calc(100% + 5px);
+    position: absolute;
+    left:0;
+    width:180%;
+}

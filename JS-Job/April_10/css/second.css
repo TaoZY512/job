@@ -1,0 +1,48 @@
+
+
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+
+}
+.body{
+    width:100%;
+}
+header,main{
+    width:58%;
+    margin:0 auto;
+    min-width:1200px;
+}
+.title{
+    font-size: 36px;
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+    margin:30px auto;
+    letter-spacing: 2px;
+
+}
+.contain{
+    padding:1em;
+    font-family:'maozedongziti1153efe4e01c639';
+    margin:30px auto 0;
+    width:69%;
+    height:565px;
+    border:2px solid #000;
+    border-radius: 10px;
+    /*IE浏览器的从右向左*/
+    writing-mode: tb-rl; /*兼容 IE*/
+    -webkit-writing-mode: vertical-rl; /*兼容 Safari*/
+    background: repeating-linear-gradient(90deg, transparent 0px, transparent 71px, #000 72px);line-height: 72px;
+}
+.contain h3{
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+.contain p{
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.contain .inscribe{
+    text-indent: 2em;
+}
