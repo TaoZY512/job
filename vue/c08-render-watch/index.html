@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>c04-render</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- c1 -->
+      <button type="button" @click.once="sayHello">SAY HELLO</button>
+      <!-- c2 -->
+      <!-- 计算属性 -->
+      <form action="">
+          <input type="text" v-model.number = "a">
+          <label for="">+</label>
+          <input type="text" v-model.number = "b">
+          <label for="">=</label>
+          <label for="">
+            {{(a+b).toFixed(2)}} - {{sum}}
+  
+          </label>
+          <label for="">
+              {{(a+b).toFixed(2)}} - {{total()}}
+    
+            </label>
+          <label for=""></label>
+        </form>
+        <!-- 计算属性 VS 侦听器 -->
+        <!-- 计算属性 -->
+        <form action="">
+            <input type="text" v-model.number = "a">
+            <label for="">+</label>
+            <input type="text" v-model.number = "b">
+            <label for="">=</label>
+            <label for="">{{(a+b).toFixed(2)}} - {{sum}} - {{total()}}</label>
+          </form>
+          <!-- 计算属性 VS 侦听器 -->
+          <form action="">
+            <p>
+              <label for="">First name</label>
+              <input type="text" v-model = 'firstName'>
+            </p>
+            <p>
+                <label for="">Last name</label>
+                <input type="text" v-model = 'lastName'>
+              </p>
+              <p>Full Name:{{fullName}}</p>
+              <p><button type="button" @click = "setfullName = 'Jocy Guo'">更名改姓<button></p>
+          </form>
+     <form action="#">
+       <!-- 实例1 -->
+       <p>
+         <input type="text" val="Hello,world!" v-model="valueV">
+       </p>
+       <!-- v-model绑定的是value的值 -->
+       <!-- 实例2  -->
+       <p>
+         性别：
+         <label>男</label>
+         <input type="radio" value="男" v-model="checkMsg">
+         <label>女</label>
+         <input type="radio" value="女"  v-model="checkMsg">
+         <label>保密</label>
+         <input type="radio" value="保密" v-model="checkMsg">
+       </p>
+       <p>您的选择是: {{checkMsg}}</p>
+
+       <!-- 实例3 -->
+       <p>下列英雄角色中定位为法师的是（多选）：</p>
+
+       <label>诸葛亮</label>
+       <input type="checkbox" value="诸葛亮" v-model="heros">
+
+       <label>露娜</label>
+       <input type="checkbox" value="露娜" v-model="heros">
+
+       <label>虞姬</label>
+       <input type="checkbox" value="虞姬" v-model="heros">
+
+       <label>貂蝉</label>
+       <input type="checkbox" value="貂蝉" v-model="heros">
+
+       <label>吕布</label>
+       <input type="checkbox" value="吕布" v-model="heros">
+
+       <p>您的选择是：{{ heros }}</p>
+       <!-- 实例4 -->
+              <select name="mySel" v-model="selected">
+                  <option value="">-请选择您所在的城市-</option>
+                  <option value="成都">成都</option>
+                  <option value="上海">上海</option>
+                  <option value="北京">北京</option>
+                  <option value="深圳">深圳</option>
+                  <option value="杭州">杭州</option>
+                  <option value="昆明">昆明</option>
+              </select>
+          <p>您所在的城市是：{{ selected }}</p>
+          <!-- 实例5 -->
+          <p>
+            <input type="text" v-model.trim="valueV">
+          </p>
+     </form>
+
+
+     
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
