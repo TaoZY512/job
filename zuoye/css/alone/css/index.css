@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.nav>ul{
+    text-align: center;
+    font-size: 0;
+}
+.nav>ul>li{
+    font-size: 18px;
+    vertical-align: top;
+    list-style: none;
+    display: inline-block;
+    width:140px;
+    height:40px;
+    background: rosybrown;
+    line-height: 40px;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border-right:1px solid white;
+}
+.nav>ul>li:hover{
+    background: coral;
+}
+.nav>ul>li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.nav>ul>li .nav-list{
+    position: absolute;
+    top:100%;
+    left:-40px;
+}
+.nav>ul>li .nav-list li{
+    background: coral;
+    width:160px;
+    list-style: none;
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: all 1s;
+}
+.nav>ul>li:hover .nav-list li{
+    transform: none;
+}
+.nav>ul>li:hover .nav-list li{
+    opacity: 1;
+}
+.nav>ul>li:hover .nav-list li:nth-child(6){
+    transition-delay: 0.6s;
+}
+.nav>ul>li:hover .nav-list li:nth-child(1){
+    transition-delay: 0.1s;
+}
+.nav>ul>li:hover .nav-list li:nth-child(2){
+    transition-delay: 0.2s;
+}
+.nav>ul>li:hover .nav-list li:nth-child(3){
+    transition-delay: 0.3s;
+}
+.nav>ul>li:hover .nav-list li:nth-child(4){
+    transition-delay: 0.4s;
+}
+.nav>ul>li:hover .nav-list li:nth-child(5){
+    transition-delay: 0.5s;
+}
+.nav>ul>li .nav-list li:nth-child(6){
+    transition-delay: 0.6s;
+}
+.nav>ul>li .nav-list li:nth-child(1){
+    transition-delay: 0.5s;
+}
+.nav>ul>li .nav-list li:nth-child(2){
+    transition-delay: 0.4s;
+}
+.nav>ul>li .nav-list li:nth-child(3){
+    transition-delay: 0.3s;
+}
+.nav>ul>li .nav-list li:nth-child(4){
+    transition-delay: 0.2s;
+}
+.nav>ul>li .nav-list li:nth-child(5){
+    transition-delay: 0.1s;
+}

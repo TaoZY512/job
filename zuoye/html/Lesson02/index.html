@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>基础标签</title>
+</head>
+<body>
+<b>粗体</b>
+<i>斜体</i>
+<em>强调</em>
+<strong>强调</strong>
+<ins>下划线</ins>
+<del>删除线</del>
+<span>
+    上标<sup>2</sup>
+    下标<sub>2</sub>
+</span>
+<address>
+    <p>地址：四川省成都市</p>
+    <p>电话：028-12382053272</p>
+</address>
+<p>
+  小明说： <q>今天天气不错</q>
+</p>
+<p>
+    昨天给学生推荐了 <cite>《web前端从入门到精通》</cite>说的好<blockquote>标签主要用于超链接，HTML 使用超链接与网络上的另一个文档相连。几乎可以在所有的网页中找到链接。点击链接可以从一张页面跳转到另一张页面。其主要常用属性如下
+</blockquote>
+</p>
+
+
+<!--网页内容基本布局结构如下-->
+<!--头部内容-->
+<header>
+    <!--导航-->
+    <nav></nav>
+</header>
+
+<!--主体内容-->
+<main>
+    <!--侧边栏/附属信息。。-->
+    <aside></aside>
+</main>
+
+<!--尾部内-->
+<footer>
+    <!--&copy;版权号-->
+    <small>CopyRight &copy;2018 By RIMI.</small>
+</footer>
+
+<!--水平分割线-->
+<hr width="80%" color="blue">
+<!--图片-->
+<img id="gg" src="./images/a.jpg" height="300" alt="图片加载失败" title="这是一张图片">
+<iframe src="https://www.baidu.com" frameborder="0" width="80%" height="500"></iframe>
+
+<!--列表-->
+<!--1.无序列表-->
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+<ul type="circle">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+<ul type="square">
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+<!--2.有序列表-->
+<ol type="a">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ol>
+<!--3.自定义列表-->
+<dl>
+    <dt>榴莲</dt>
+    <dt>榴莲被称为 <mark>水果之王</mark></dt>
+
+    <dt>柑儿</dt>
+    <dt>柑儿富含<br />丰富的维生素C</dt>
+</dl>
+
+<!--进度条-->
+<progress max="1000" value="200"></progress>
+<progress></progress>
+
+<details>
+    <summary>睿峰科技</summary>
+    <p>睿峰科技-移动互联应用专家。</p>
+</details>
+<fieldset>
+    <legend>睿峰科技</legend>
+    <p>睿峰科技-移动互联应用专家。</p>
+</fieldset>
+
+<!--音频-->
+<audio controls autoplay muted loop>
+    <source src="./medium/city.mp3" type="audio/mpeg">
+    <source src="./medium/city.ogg" type="audio/ogg">
+</audio>
+<video  width="600" height="400" controls>
+    <source src="./medium/mov_bbb.mp4" type="video/mp4">
+    <source src="./medium/mov_bbb.ogg" type="video/ogg">
+</video>
+<table border="1" cellspacing="0" cellpadding="8" align="center">
+    <caption>RIMI 学员信息表</caption>
+    <thead>
+        <tr>
+            <th>班级</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>籍贯</th>
+        </tr>
+    </thead>
+    <tbody align="center" bgcolor="pink">
+        <tr>
+            <td rowspan="3">网络15323</td>
+            <td>张三</td>
+            <td>男</td>
+            <td>四川</td>
+        </tr>
+        <tr>
+            <!--<td>网络15323</td>-->
+            <td>李四</td>
+            <td>男</td>
+            <td>四川</td>
+        </tr>
+        <tr>
+            <!--<td>网络15323</td>-->
+            <td>王小二</td>
+            <td>男</td>
+            <td>四川</td>
+        </tr>
+        <tr>
+            <td>网络15330</td>
+            <td>小芳</td>
+            <td>女</td>
+            <td>河南</td>
+        </tr>
+    </tbody>
+    <tfoot align="center">
+        <tr>
+            <td colspan="4">如有疑问，欢迎致电</td>
+        </tr>
+    </tfoot>
+</table>
+<a href="http://www.baidu.com" target="_blank">百度一下</a>
+<a href="#">科技</a>
+<a href="javascript:void(0)">科技</a>
+<a href="#gg">点击跳转GG所有的位置</a>
+
+<ul>
+    <li>睿峰
+        <ul>
+            <li>w1801
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            </li>
+            <li>w1802</li>
+        </ul>
+    </li>
+</ul>
+<dl>
+    <dt>苹果</dt>
+    <dd>苹果（学名：Malus pumila）是水果的一种，是蔷薇科苹果亚科苹果属植物，其树为落叶乔木。苹果的果实富含矿物质和维生素，是人们经常食用的水果之一。</dd>
+
+    <dt>草莓</dt>
+    <dd>草莓（学名：Fragaria × ananassa Duch.），多年生草本，高10-40厘米。茎低于叶或近相等，密被开.展黄色柔毛。叶三出，小叶具短柄，质地较厚，倒卵形或菱形，上面深绿色，几无毛，下面淡白绿色，疏生毛，沿脉较密；叶柄密被开展黄色柔毛。聚伞花序，花序下面具一短柄的小叶；花两性；萼片卵形，比副萼片稍长；花瓣白色，近圆形或倒卵椭圆形。聚合果大，宿存萼片直立，紧贴于果实；瘦果尖卵形，光滑。花期4-5月，果期6-7月。</dd>
+
+    <dt>樱桃</dt>
+    <dd>樱桃（学名：Cerasus pseudocerasus），是某些李属类植物的统称，包括樱桃亚属、酸樱桃亚属、桂樱亚属等。乔木，高2-6米，树皮灰白色。小枝灰褐色，嫩枝绿色，无毛或被疏柔毛。冬芽卵形，无毛。</dd>
+</dl>
+</body>
+</html>

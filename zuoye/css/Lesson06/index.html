@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div style="width:300px; height:200px; background-color: #c7fff5"></div>
+<style>
+    html,body{
+        height: 100%;
+    }
+    body{
+        padding:0;
+        margin:0;
+        background-image: url(./images/b.jpg);
+        /*背景平铺方式*/
+        background-repeat:no-repeat;
+        background-size:20% auto;
+        background-position:center center;
+    }
+</style>
+<style>
+    .sprites{
+        width:50px;
+        height:50px;
+        margin:50px 8px;
+        background-image:url("./images/c.jpg");
+        background-position: 7px 119px;
+    }
+    .sprites:hover{
+        background-position: -41px 119px;
+    }
+
+    .sprites_a{
+        width:30px;
+        height:30px;
+        margin:70px 8px;
+        background-image: url("./images/c.jpg");
+        background-position:3px 164px ;
+    }
+    .sprites_a:hover{
+        background-position: -45px 164px;
+    }
+    .sprites_a:active{
+        background-position: -93px 164px;
+    }
+</style>
+<div class="sprites"></div>
+<div class="sprites_a"></div>
+<style>
+    .box{
+        width:500px;
+        height:300px;
+        margin:50px 8px;
+        border:1px solid #ccc;
+        background: radial-gradient(30px ellipse at center center, #fff, #000);;
+    }
+</style>
+
+<div class="box"></div>
+<div class="box" style="background:repeating-linear-gradient(90deg,#b24ed7 0,#ebcdf2 25px,red 40px)"></div>
+<div class="box" style="background: repeating-linear-gradient(transparent 0,transparent 39px,#333 40px);line-height: 40px">
+    在讲解颜色结点时，我们提到“如果多个颜色结点有相同的位置，它们产生一个从一种颜色到另一种颜色的急剧的转换。从效果来看，就是从一种颜色突然改变到另一种颜色”。根据这个定义，我们只需要将多个颜色结点设置到同一个位置，就可以轻易的得到条纹背景效果。下面我们来看各种条纹背景是怎么产生的</div>
+<div class="box" style="background:linear-gradient(#b24ed7 80%,#ebcdf2 0);background-size: 100% 25%;"></div>
+</body>
+</html>
