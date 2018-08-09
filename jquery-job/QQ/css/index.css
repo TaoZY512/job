@@ -1,0 +1,78 @@
+@charset "utf-8";
+body{
+    background: rgb(248, 242, 242);
+}
+.myinfo {
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    background-color: #108ee9;
+}
+.myicon {
+    display: inline-block;
+    width: 60px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+.myicon img{
+    width: 100%;
+}
+.add{
+    margin-right:25px;
+    color:white;
+    font-size: 28px;
+
+}
+.mydes,.myname {
+    margin-left: 10px;
+    display: inline-block;
+    width: 100px;
+    color:white;
+    box-sizing: border-box;
+}
+.menu-list>.item{
+    color:#000;
+    font-size:17px;
+    letter-spacing: 2px;
+    margin:10px 10px;
+    box-sizing: border-box;
+}
+.menu-list>.item>.input{
+    font-size:17px;
+    background:  rgb(248, 242, 242);
+    outline: none;
+}
+.menu-list>.item>.group{
+    cursor:pointer;
+}
+.menu-list > .item > ul>li{
+    width:100%;
+    margin:10px 10px;
+    display: flex;
+    align-content: space-between;
+    border:1px solid #eee;
+    box-sizing: border-box;
+    
+}
+.menu-list > .item > ul >li>.one{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background: rgb(42, 172, 107);
+    margin-right:10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.menu-list > .item > ul >li>.one>img{
+    width:68px;
+    height:50px;
+    position:relative;
+    left:-14px;
+}
+.menu-list > .item > ul >li>.two{
+    width:80%;
+    font-size:13px;
+}
+.menu-list > .item > ul >li>.two>p:last-child{
+    color:rgb(153, 152, 152);
+}
