@@ -1,0 +1,102 @@
+
+
+.banner_img{
+    width:100%;
+    height:637px;
+    cursor: pointer;
+    position: relative;
+    right:0;
+    overflow: hidden;
+}
+.banner_img > img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:all .5s linear;
+}
+.banner_img .show{
+    opacity:1;
+}
+.hanfuShape>ul{
+    width:100%;
+    height:270px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.hanfuShape>ul>li{
+    width:32.8%;
+    height:100%;
+    text-align: center;
+}
+.hanfuShape>ul>li>a>img{
+    width:100%;
+    height:86%;
+}
+.hanfuShape>ul>li>a>p{
+    color:black;
+    width:100%;
+    line-height: 40px;
+    background: rgba(241,241,241,0.99);
+}
+.hanfuGraphic>ul{
+    width:100%;
+    height:500px;
+    margin:10px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap:wrap;
+
+}
+.hanfuGraphic>ul>li{
+    width:32.8%;
+    height:250px;
+    overflow: hidden;
+    position: relative;
+
+}
+.hanfuGraphic>ul>li>img{
+    width:100%;
+    height:96%;
+}
+.hanfuGraphic>ul>li:hover .small{
+    transition: all .3s linear;
+    opacity: 1;
+    top:0;
+}
+.small{
+    opacity: 0;
+    padding:0 50px;
+    width:100%;
+    height:56%;
+    padding:50px 0;
+    position:absolute;
+    top:100px;
+    left:0;
+    background: rgba(0,0,0,0.6);
+    color:white;
+}
+.small h5>a{
+    padding:0 20px;
+    font-size: 14px;
+    color:#fff;
+    letter-spacing: 1px;
+
+}
+.small p{
+    padding:0 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top:15px;
+}
+.bottom_content p{
+    text-indent: 2em;
+    font-size:14px;
+    letter-spacing: 2px;
+    margin:15px 0;
+}

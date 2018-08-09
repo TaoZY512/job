@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hanfu-show - LOGIN</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="./plugs/LHYAlertView.css">
+    <link rel="stylesheet" href="./css/normalized.css">
+    <link rel="stylesheet" href="./css/login-register.css">
+</head>
+<body>
+
+   <div class="login">
+       <h3 class="title">LOGIN</h3>
+       <p class="login-register-style">
+           <a class="fr back" href="./index.html">回到首页</a>
+       </p>
+       <form action="">
+           <section class="input-box" >
+               <p class="hidden">用户名不合法，4到16位（字母，数字，下划线，减号）</p>
+               <input type="text" class="username" placeholder="请输入用户名" ><br>
+           </section>
+           <section class="input-box">
+               <p class="hidden">密码不合法，4到16位（字母，数字，下划线，减号）</p>
+               <input type="password" class="password" placeholder="请输入密码"><br>
+           </section>
+           <section class="input-box hidden">
+               <p class="hidden">电话号码有误</p>
+               <input type="text" class = "phone hidden" placeholder="请输入电话号码"><br>
+           </section>
+           <section class="input-box">
+               <p class="hidden">验证码有误</p>
+           <input type="text" placeholder="请输入验证码" class="code">
+
+           <section onselectstart="return false" class="validate-code"></section>
+           </section>
+           <p class="login-register-style">
+           <a class="fr go-register" href="javascript:void(0)">免费注册</a>
+
+           <a class="fl go-login hidden" href="javascript:void(0)">返回登陆</a>
+           </p>
+
+           <button class="login-register-btn" type="button">登陆</button>
+           <button class="login-register hidden" type="button">注册</button>
+       </form>
+   </div>
+   <div class="all">
+       <img src="./images/login_banner.jpg" alt="">
+   </div>
+   <script type="text/javascript" src="./js/tools.js"></script>
+   <script type="text/javascript" src="./plugs/bmob-min.js"></script>
+   <script type="text/javascript" src="./plugs/LHYAlertView.js"></script>
+   <script type="text/javascript" src="./js/common.js"></script>
+   <script type="text/javascript" src="./js/login-register.js"></script>
+</body>
+</html>

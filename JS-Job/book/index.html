@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table</title>
+</head>
+<style type="text/css">
+    header{
+        width:100%;
+        height:100px;
+        background: rgba(75,61,50,0.89);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        background: rgba(100,90,82,0.89);
+        padding:40px;
+    }
+    h2{
+        color:white;
+        font-weight: normal;
+
+    }
+    span{
+        font-size: 18px;
+        font-weight: normal;
+    }
+    form{
+        text-align: center;
+    }
+    #num{
+        color:white;
+        font-size: 28px;
+        margin-right:20px;
+    }
+
+  input{
+      color:white;
+      text-indent: 2em;
+      font-size: 22px;
+      font-weight: lighter;
+      background: rgba(153,141,131,0.89);
+      width:1000px;
+      height:50px;
+      border-radius: 10px;
+      border:1px solid rgba(241,237,237,0.89);
+  }
+    table{
+        width:75%;
+        margin:20px auto;
+
+    }
+    #a{
+    width:25%;
+    height:30px;
+    background: rgba(143,129,116,0.89);
+    }
+    #b{
+        width:48%;
+        background: rgba(143,129,116,0.89);
+    }
+    #c{
+        width:25%;
+        background: rgba(143,129,116,0.89);
+    }
+
+</style>
+<body>
+<header>
+   <h2>图书管理<span>Library Manager</span></h2>
+</header>
+<main>
+    <form action="">
+        <span id="num"></span>
+        <input type="text" id="search" value="请输入图书名称或者书籍的作者进行搜索"><button id="sub" type="button" value="确定">确定</button>
+    </form>
+    <table id="taBle">
+        <tr id="abc">
+            <th id="a">书名</th>
+            <th id="b">描述</th>
+            <th id="c">作者</th>
+        </tr>
+    </table>
+</main>
+<script type="text/javascript" src="js/book-info.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+body{
+background: #e0ffff;
+    width:100%;
+    margin:0;
+    padding:0;
+
+}
+nav{
+    width:80%;
+    margin:50px auto;
+    color:white;
+}
+main{
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+}
+footer{
+    width:100%;
+    height:110px;
+    text-align:center;
+    color: white;
+    background: #660000;
+    padding-top: 30px;
+
+}
+.menu-list{
+    list-style:none;
+    text-align: center;
+
+}
+
+.menu-list li{
+    display: inline-block;
+    background: #660000;
+    width:120px;
+    height:30px;
+    font-size: 20px;
+    color:white;
+    cursor:pointer;
+    position: relative;
+    border:1px solid #e0ffff;
+}
+.menu-list a{
+    color:white;
+    text-decoration: none;
+}
+.menu-list li:hover{
+    background: cornflowerblue;
+}
+.menu-list li:active{
+    background: greenyellow;
+}
+.menu-list li:hover:after{
+    width:100%;
+    top: calc(100% + 5px);
+    left:0;
+    font-size: .5em;
+    background: cornflowerblue;
+    content:attr(data-msg);
+    position: absolute;
+
+}
+.menu-list li:first-child{
+    border-top-left-radius:16px;
+}
+.menu-list li:last-child{
+    border-bottom-right-radius:16px;
+}
+input{
+    width:360px;
+    height:32px;
+    border:1px solid #660000;
+    border-radius: 7px;
+    margin-bottom: 50px;
+}
+input:focus{
+    color:greenyellow;
+    border:2px solid greenyellow;
+}
+[type="text"]{
+    padding-left: 8px;
+}
+/*设置占位符颜色*/
+input:focus::-webkit-input-placeholder{
+    color:greenyellow;
+}
+.content a{
+    color: blue;
+    text-decoration: none;
+}
+.content a:hover{
+    text-decoration: underline;
+}
+.content time{
+    color:#6b6e6a
+}
+article{
+    text-align: left;
+}
+article .pic{
+    text-align: center;
+}
+article h1{
+    color:darkred;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: left;
+}
+article .cit{
+    color:blue;
+}
+section{
+    text-indent: 30px;
+}
+.cit1:first-letter{
+    font-size: 30px;
+}
+footer p{
+    text-align: center;
+}
+footer>p:last-child{
+    font-size: 14px;
+}
+body::-webkit-scrollbar{
+    width:18px;
+    background:#23131a;
+}
+body::-webkit-scrollbar-thumb:vertical{
+    background: cornflowerblue;
+}

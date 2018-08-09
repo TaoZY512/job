@@ -1,0 +1,22 @@
+{
+  "shapeInfo":[
+    { "imgSrc":"./images/shape/s1.jpg" , "title":"一款感觉自己要羽化登仙的发型","describe":"一款感觉自己要羽化登仙的发型： 让我们都假装高冷起来。"},
+     { "imgSrc":"./images/shape/s2.jpg" , "title":"汉服头饰教程 ---樱花/桃花","describe":"汉服头饰教程 -- 樱花 桃花"},
+   { "imgSrc":"./images/shape/s3.jpg" , "title":"【汉服发型】夏日必备短发发型教程","describe":"摘要：说好的短发教程出了，希望我以后能多多出教程给你们，让你们给我见证一下今年的头发会有多长~"}
+  ],
+  "shapeInfoImageText":[
+    { "imgSrc":"./images/shape/s4.jpg" , "title":"投票| 全国高校汉服摄影大赛，邀你共享汉服盛宴","describe":"摘要：汉服文化一步步进入大众视野，传统工艺和现代风格的碰撞，更多的青年汉服着身，一个个汉服组织如雨后春笋，从高校、地方、国外孕育而生。"},
+    { "imgSrc":"./images/shape/s5.jpg" , "title":"2018戊戌狗年汉服春晚重播地址","describe":"摘要：漢服春晚，致力於以新春晚會的形式，展示華夏傳統雅藝。志在復興炎黃傳承之禮義，華夏傲然之風骨。"},
+    { "imgSrc":"./images/shape/s6.jpg" , "title":"2018戊戌狗年汉服春晚直播地址","describe":"摘要：第八届汉服春晚今晚十点播出了啊～~"}
+  ],
+  "shapeInfoLectureRoom":[
+    { "imgSrc":"./images/shape/s7.jpg" , "title":"新婿新妇周制婚礼","describe":"摘要：《春秋左传正义》云：“中国有礼仪之大，故称夏；有服章之美，谓之华。”岁在壬辰仲夏，榴月十二，新婿新妇制汉式礼服，行周制礼数，于当下西学当道之际，振兴国学之机，以示我炎黄华美衣冠，弘我中华典雅仪范。"},
+    { "imgSrc":"./images/shape/s2.jpg" , "title":"汉服头饰教程 ---樱花/桃花","describe":"汉服头饰教程 -- 樱花 桃花"},
+    { "imgSrc":"./images/shape/s8.jpg" , "title":"汉服不是一种服装，而是一个演变的过程","describe":"摘要：如今喜欢汉服的人越来越多，而对汉服的争议也越来越大。约五千年前，中国在新石器时代的仰韶文化时期，就产生了原始的农业和纺织业，开始用织成的麻布来做衣服，黄帝的妻子嫘祖发明了饲蚕和丝纺，人们的衣冠服饰日臻完备。"}
+  ],
+  "shapeInfoMake":[
+    { "imgSrc":"./images/shape/s9.jpg" , "title":"【汉服发型】彼岸","describe":"【汉服发型】彼岸"},
+    { "imgSrc":"./images/shape/s10.jpg" , "title":"【汉服发型】《花想容》","describe":"摘要：发型教程第一篇【花想容】第一次做图文教程还是准备了蛮久的，好多东西都不会，希望大家能看懂，有什么建议或者想要的发型可以告诉我哟～"},
+    { "imgSrc":"./images/shape/s11.jpg" , "title":"【汉服发型】清新简约齐肩短发教程","describe":"摘要：一款清新简约的齐肩短发教程来啦~一起学起来吧！~"}
+  ]
+}

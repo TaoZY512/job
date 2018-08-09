@@ -1,0 +1,53 @@
+@charset "UTF-8";
+html,body{
+    margin:0;
+    font:16px sans-serif;
+}
+body{
+    position: relative;
+}
+.img-group img{
+    width:100%;
+    display: none;
+}
+.all:hover .direction{
+    cursor: pointer;
+    opacity: 1;
+}
+.img-group img.show{
+    display: block;
+}
+.dot{
+    width:100%;
+    position: absolute;
+    top:530px;
+    text-align: center;
+
+}
+.dot p{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 9;
+}
+.dot .on{
+    background: cadetblue;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.direction{
+    transition: all .5s linear;
+    opacity: 0;
+    width:100%;
+    position: absolute;
+    top:230px;
+}
+.direction img{
+    transform: scale(.5,.5);
+}

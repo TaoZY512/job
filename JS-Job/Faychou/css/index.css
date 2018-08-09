@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.index_con{
+    width:100%;
+    background: bisque;
+    box-sizing: border-box;
+}
+
+.contentl{
+    width:69.1%;
+    margin-right:10px;
+}
+.contentr{
+    width:30%;
+    height:200px;
+    background:cyan;
+}
+.conl li a{
+    width:94.5%;
+    height:100%;
+    display: block;
+    border:4px solid white;
+}
+.con .conl li>a>img{
+    vertical-align:middle;
+    text-align: left;
+
+}
+.con{
+    box-sizing: border-box;
+}
+.con .conl li:not(:last-child){
+    margin-bottom: 5px;
+}
+.conr{
+    width:710px;
+    height:300px;
+    transform-style: preserve-3d;
+    position: relative;
+
+}
+.conr .face{
+    margin:0 auto;
+    width:710px;
+    height:300px;
+    position:absolute;
+}
+.front{
+    background: #9e0101;
+    transform: translateZ(355px);
+}
+.back{
+    background: coral;
+    transform: rotateY(180deg) translateZ(355px);
+}
+.top{
+    background: #53668b;
+    transform: rotateX(90deg) translateZ(355px);
+}
+.bottom{
+    background: chartreuse;
+    transform: rotateX(-90deg) translateZ(355px);
+}
+/*
+@-webkit-keyframes shine{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform:rotateX(90deg);
+    }
+}
+@-webkit-keyframes shine{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform:rotateX(90deg);
+    }
+}*/
+.conr{
+    animation: shine 20s linear 0s infinite normal running;
+}

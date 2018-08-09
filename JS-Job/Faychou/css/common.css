@@ -1,0 +1,199 @@
+
+@charset "UTF-8";
+@font-face {
+    font-family: 'iconfont';  /* project id 616473 */
+    src: url('//at.alicdn.com/t/font_616473_1pyeu12zckwyu8fr.eot');
+    src: url('//at.alicdn.com/t/font_616473_1pyeu12zckwyu8fr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_616473_1pyeu12zckwyu8fr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_616473_1pyeu12zckwyu8fr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_616473_1pyeu12zckwyu8fr.svg#iconfont') format('svg');
+}
+.icon{
+    font:normal normal 22px 'iconfont';
+    color: rgba(227,227,227,0.89);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(238,238,238,0.89);
+}
+a  { text-decoration: none; }
+ul { list-style: none; }
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+
+}
+.clearFix {
+    zoom: 1;
+}
+.clearFix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.wrapper{
+    width:95%;
+    max-width: 1226px;
+    margin:0 auto;
+}
+
+.title{
+    width:100%;
+    height:106px;
+    background: rgba(26,188,156,0.89);
+
+    text-align: center;
+}
+.title h1>a{
+    color:white;
+
+
+}
+.title>h1{
+    font-size: 52px;
+    font-weight: normal;
+    font-family: "微软雅黑";
+    line-height: 106px;
+    transition: all .4s linear;
+}
+.title>h1 span{
+    font-size: 24px;
+    font-weight: initial;
+    padding-left:5px;
+    transition: all .4s linear;
+}
+.title a:hover span{
+    padding-left:10px;
+    letter-spacing: 2px;
+    opacity: .4;
+}
+.title a:hover h1{
+    letter-spacing: 2px;
+}
+.title_one{
+    width:100%;
+    height:55px;
+    background: rgba(69,85,82,0.89);
+}
+.title_box .title-list{
+    font-size: 0;
+
+}
+.title_box .title-list li{
+    position: relative;
+    vertical-align: top;
+    font-size: 18px;
+    display: inline-block;
+    padding:0 20px;
+    line-height: 55px;
+    margin-right:1px;
+}
+.title_box .title-list .nav-list{
+    top:100%;
+    left:0;
+    position: absolute;
+    z-index: 9;
+}
+.wrr{
+
+}
+.title_box .title-list .nav-list li{
+    color:white;
+    opacity: 0;
+    display: block;
+    width:130px;
+    background: rgba(26,188,156,0.89);
+    transform: rotateY(180deg);
+    transition: all 1s;
+}
+.title_box .title-list li:hover .nav-list li{
+    opacity: 1;
+}
+ .title-list li:hover .nav-list li:nth-child(1){
+     transition-delay: 0.5s;
+ }
+.title-list li:hover .nav-list li:nth-child(2){
+    transition-delay: 0.1s;
+}
+.title-list li:hover .nav-list li:nth-child(3){
+    transition-delay: 0.2s;
+}
+.title-list li:hover .nav-list li:nth-child(4){
+    transition-delay: 0.3s;
+}
+.title-list li:hover .nav-list li:nth-child(5){
+    transition-delay: 0.4s;
+}
+
+.title-list>li .nav-list>li:nth-child(1){
+    transition-delay: .5s;
+}
+.title-list>li .nav-list>li:nth-child(2){
+    transition-delay: .4s;
+}
+.title-list>li .nav-list>li:nth-child(3){
+    transition-delay: .3s;
+}
+.title-list>li .nav-list>li:nth-child(4){
+    transition-delay: .2s;
+}.title-list>li .nav-list>li:nth-child(5){
+     transition-delay: .1s;
+ }
+
+.title_box .title-list .nav-list li:hover{
+background:rgba(69,85,82,0.89);}
+.title_box .title-list li:hover{
+    background:rgba(26,188,156,0.89);
+}
+.title-list li:hover .nav-list li{
+    transform: none;
+}
+.title_box .title-list .else{
+    background:rgba(26,188,156,0.89) ;
+}
+.title_box .title-list li a{
+    color:white;
+}
+.tiner{
+    width:55px;
+    height:55px;
+    background:rgba(26,188,156,0.89) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tiner a:hover .icon{
+    color: white;
+}
+.tiner img{
+    width:20px;
+    height:20px;
+    margin-top:50%;
+    transform: translateY(-50%);
+}
+.title_content{
+    width:100%;
+    height:40px;
+    background: white;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+.title_content p{
+    line-height: 20px;
+    font-size: 14px;
+    background: white;
+
+}
+.title_content p img{
+   margin:10px 10px 0 20px;
+    width:18px;
+    height:18px;
+}
