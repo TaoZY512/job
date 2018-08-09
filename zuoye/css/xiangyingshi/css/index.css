@@ -1,0 +1,72 @@
+@charset "UTF-8";
+header,footer{
+    width:100%;
+    height:200px;
+    background: #000;
+}
+main{
+    width:75%;
+    height:1200px;
+    margin:12px auto;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+header,footer,main{
+    min-width:1100px;
+
+}
+.left,.right{
+    width:20%;
+}
+.middle{
+    width:58%;
+}
+.left,.right,.middle{
+    height:100%;
+    background: gray ;
+}
+/*媒体查询*/
+@media screen and (min-width:790px) and (max-width:1099px){
+    .left{
+        display: none;
+    }
+    .middle{
+        width:70%;
+    }
+    .right{
+        width:28%;
+    }
+}
+@media screen and (min-width:375px) and (max-width:789px){
+    main{
+        width:375px;
+        height:500px;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+    }
+    .left,.right,.middle{
+        width:100%;
+    }
+    .left,.right{
+        height:20%;
+    }
+    .middle{
+        height:55%;
+    }
+}
+@media screen and (max-width:374px){
+    header,footer,main{
+        display: none;
+    }
+    body{
+        background: #000;
+    }
+}
+footer p{
+    width:300px;
+    height:300px;
+    background: white;
+    writing-mode: vertical-rl;
+}

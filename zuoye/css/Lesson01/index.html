@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-概述、基础选择器</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<!--行内样式-->
+<div style="font-size:28px;color: #74ffe7;">Hello,World!</div>
+<div style="font-size:28px;color: #74ffe7;">Hello,World!</div>
+<!--内嵌样式-->
+<style>
+   p{
+       font-size: 28px;
+       color: chocolate;
+   }
+    /* 行内样式的优先级高于内嵌样式*/
+    /*!important 修饰后优先级是最高的*/
+    div{
+        color:orange !important;
+    }
+</style>
+<p>今天星期一</p>
+<p>今天星期一</p>
+<section></section>
+<p class="line">成都-天府之国</p>
+<div class="line" id="cd">成都-天府之国</div>
+
+<div class="wrap">
+    <h1>这是一个标题</h1>
+    <section>
+        <span class="text">这是一个文本</span>
+    </section>
+</div>
+
+<ul class="list">
+    <li class="flag">列表01</li>
+    <li title="aa">列表02</li>
+    <li>列表03</li>
+    <li>列表04</li>
+    <li title="gg">列表05</li>
+</ul>
+</body>
+</html>
